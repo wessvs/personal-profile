@@ -1,0 +1,49 @@
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    width: 25rem;
+    height: 40rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.perfilImg {
+    max-width: 7rem;
+    border-radius: 5rem;
+    margin: 0 auto;
+    box-shadow: 0px 24px 36px -16px rgba(0,0,0,0.9);}
+
+.containerBtn {
+    display: grid;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(36,118,190);
+    background: linear-gradient(106deg, rgba(36,118,190,1) 55%, rgba(104,190,224,1) 100%);
+    padding: 1rem;
+    width: fit-content;
+    min-width: 10rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    font-weight: 700;
+    border: 3px solid transparent;
+    transition: .5s ease-out;
+    box-shadow: 0px 24px 36px -16px rgba(0,0,0,0.4);
+}
+
+.btn:hover {
+    border-color: rgba(104,190,224,1);
+    background-color: white;
+    background: white;
+    color: #428CD1;
+}
+
