@@ -5,7 +5,7 @@ export default function Profile({ avatar, name,bio, email, phone,
     return ( <>
     <div className={styles.container}>
         <img src={avatar} alt={name} className={styles.perfilImg} />
-        <h1>{ name }</h1>
+        <h1 className={styles.title}>{ name }</h1>
         <p>{ bio } </p>
         <p>{ phone }</p>
         <p>{ email }</p>

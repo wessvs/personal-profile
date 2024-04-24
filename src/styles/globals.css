@@ -11,20 +11,15 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: 600;
-    text-align: center;
-    margin: 2rem 0;
+    margin-top: 2rem;
 }
 
 p {
     font-size: 1rem;
     font-weight: 200;
-    text-align: center;
 }
 
 p, h1 {
-    display: inline-block;
-    height: 2rem;
-    vertical-align: center;
-    border-bottom: 1px solid #428CD1;
+    border-bottom: 2px solid #428CD1;
     margin: 1rem 0;
 }
