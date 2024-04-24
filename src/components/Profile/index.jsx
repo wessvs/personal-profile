@@ -1,20 +1,29 @@
-import Title from '../Title'
+import Title from './Title'
 import styles from './styles.module.css'
+import ProfileSection from './ProfileSection'
+import LinkButton from '../LinkButton'
 
 export default function Profile({ avatar, name,bio, email, phone, 
                                     githubUrl,linkedinUrl, twitterUrl}) {
     return ( <>
     <div className={styles.container}>
         <img src={avatar} alt={name} className={styles.perfilImg} />
-        <Title text={name} />
-        <p>{ bio } </p>
-        <p>{ phone }</p>
-        <p>{ email }</p>
-        <div className={styles.containerBtn}>
-            <a className={styles.btn} href={ githubUrl } target='_blank'>GitHub</a>
-            <a className={styles.btn} href={ linkedinUrl } target='_blank'>Linkedin</a>
-            <a className={styles.btn} href={ twitterUrl } target='_blank'>Twitter</a>
-        </div>
+        <Title>
+            {name}
+            <button>follow</button> 
+        </Title>
+        <ProfileSection>{bio}</ProfileSection>
+        <ProfileSection>{ phone }</ProfileSection> 
+        <ProfileSection>{ email }</ProfileSection> 
+
+        <ProfileSection>
+            <div className={styles.containerBtn}>
+                <LinkButton href={githubUrl}>Github 
+                </LinkButton>
+                <LinkButton href={ linkedinUrl }>Linkedin </LinkButton>
+                <LinkButton href={ twitterUrl }>Twitter</LinkButton>
+            </div>
+        </ProfileSection>
     </div>
 
 </>)

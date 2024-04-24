@@ -8,12 +8,7 @@ body {
     background-color: #428CD1;
 }
 
-p {
+div {
     font-size: 1rem;
     font-weight: 200;
-}
-
-p, h1 {
-    border-bottom: 2px solid #428CD1;
-    margin: 1rem 0;
 }
