@@ -10,9 +10,9 @@ export default function Profile({ avatar, name,bio, email, phone,
         <p>{ phone }</p>
         <p>{ email }</p>
         <div className={styles.containerBtn}>
-            <a className={styles.btn} href={ githubUrl }>GitHub</a>
-            <a className={styles.btn} href={ linkedinUrl }>Linkedin</a>
-            <a className={styles.btn} href={ twitterUrl }>Twitter</a>
+            <a className={styles.btn} href={ githubUrl } target='_blank'>GitHub</a>
+            <a className={styles.btn} href={ linkedinUrl } target='_blank'>Linkedin</a>
+            <a className={styles.btn} href={ twitterUrl } target='_blank'>Twitter</a>
         </div>
     </div>
 
