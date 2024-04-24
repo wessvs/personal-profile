@@ -1,3 +1,4 @@
+import Title from '../Title'
 import styles from './styles.module.css'
 
 export default function Profile({ avatar, name,bio, email, phone, 
@@ -5,7 +6,7 @@ export default function Profile({ avatar, name,bio, email, phone,
     return ( <>
     <div className={styles.container}>
         <img src={avatar} alt={name} className={styles.perfilImg} />
-        <h1 className={styles.title}>{ name }</h1>
+        <Title text={name} />
         <p>{ bio } </p>
         <p>{ phone }</p>
         <p>{ email }</p>
