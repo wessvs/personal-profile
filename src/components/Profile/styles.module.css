@@ -25,4 +25,8 @@
     gap: 1.5rem;
 }
 
+.followButton {
+    margin: .5rem 1rem;
+    padding: .125rem .5rem;
+}
 
